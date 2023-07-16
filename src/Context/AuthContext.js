@@ -68,7 +68,3 @@ export const AuthContextProvider = ({ children }) => {
 export const UserAuth = () => {
     return useContext(AuthContext);
 };
-const popup=window.open(url,"popup","popup=ture");
-const checkPopup=setInterval(()=>{
-    if(!popup || !popup.close) return;
-},1000);
